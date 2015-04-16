@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Address Book</title>
+  <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-1.11.2.js"></script>
+  <script src="js/scripts.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <h1>To Do</h1>
+      <div class="col-sm-6">
+        <h3>Lists</h3>
+        <ul id="list_items">
+        </ul>
+      </div>
+      <div class="col-sm-6">
+        <h3>Selected List: <span id="selected_list">None</span></h3>
+        <ul id='tasks'></ul>
+      </div>
+    </div>
+
+    <div class = "row">
+      <div class = "col-sm-6">
+        <h3>Create a list</h3>
+        <form id="newList">
+          <div class="form-group">
+            <label for="list_name">List Name</label>
+            <input type="text" class="form-control" id="list_name">
+          </div>
+          <button type="submit" class="btn btn-danger">Add</button>
+        </form>
+      </div>
+
+      <div class="col-sm-6" id="add-task">
+        <h3>Add a Task:</h3>
+        <form id="newTask">
+          <div class="form-group">
+            <label for="task_name">Description</label>
+            <input type="text" class="form-control" id="task_name">
+          </div>
+
+          <button type="submit" class="btn btn-danger">Add</button>
+        </form>
+      </div>
+
+    </div>
+
+  </div>
+</body>
+</html>
